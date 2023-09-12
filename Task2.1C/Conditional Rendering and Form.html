@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue 3 Conditional Rendering</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1 v-if="showTitle">Conditional Rendering Example</h1>
+        <p v-else>No title to display</p>
+
+        <button @click="toggleTitle">Toggle Title</button>
+
+        <ul>
+            <li v-for="item in items">{{ item }}</li>
+        </ul>
+
+        <div v-show="showMessage">
+            This message is shown using v-show.
+        </div>
+
+        <div>
+            <h3 v-if="showTitle">Form Input Handlings</h3>
+            <input type="text" v-model="inputText">
+            <p>You entered: {{ inputText }}</p>
+        </div>
+
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    showTitle: true,
+                    items: ['Item 1', 'Item 2', 'Item 3'],
+                    showMessage: true,
+                    inputText: ''
+                };
+            },
+            methods: {
+                toggleTitle() {
+                    this.showTitle = !this.showTitle;
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+
+</html>
