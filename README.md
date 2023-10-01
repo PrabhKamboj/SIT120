@@ -1,7 +1,5 @@
 # SIT120
 
-Certainly, here's a GitHub project description for your Portfolio Task (1.3P):
-
 ---
 
 **Task 1.3P: Portfolio Website**
