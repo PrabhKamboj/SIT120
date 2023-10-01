@@ -45,11 +45,3 @@ To run this project locally, follow these steps:
 7. Open your web browser and navigate to the provided local server address (usually http://localhost:8080/).
 
 The portfolio website should now be up and running locally on your machine. You can access the different sections of the website, including Home, About Me, Skills, and Contact, by clicking on the corresponding links in the navigation bar.
-
-Feel free to explore the code, customize the content, and make this portfolio website your own. Showcase your skills and projects to the world with this responsive and user-friendly website template.
-
-For any questions or issues, please refer to the documentation or open an issue in this repository.
-
----
-
-This description provides clear instructions on how to set up and run the project locally, including the installation of Vue Router and Vue CLI if necessary. It also mentions the exclusion of the `node_modules` folder due to GitHub's file upload limit, ensuring that users can successfully run the project.
